@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="94.0" prefWidth="166.0" text="Register" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="35.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="103.0" prefWidth="600.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="156.0" prefWidth="300.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0">
+                           <children>
+                              <Label text="Username" />
+                              <TextField fx:id="tb_username" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="600.0">
+                           <children>
+                              <Label text="Password" />
+                              <PasswordField fx:id="tb_password1" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="600.0">
+                           <children>
+                              <Label text="Repeat Password" />
+                              <PasswordField fx:id="tb_password2" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="iv_image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/jpg.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="bt_cancel" mnemonicParsing="false" onAction="#cancel" prefHeight="26.0" prefWidth="74.0" text="Cancel" />
+                  <Button fx:id="bt_selectImage" mnemonicParsing="false" onAction="#selectImage" text="Select image" />
+                  <Button fx:id="bt_register" mnemonicParsing="false" onAction="#accept" prefHeight="26.0" prefWidth="79.0" text="Register" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
